@@ -19,5 +19,11 @@ else:
     sum_right_to_left = sum(matrix[i][N - 1 - i] for i in range(N))
     print("Сумма диагонали справа налево:", sum_right_to_left)
 
-    center_value = matrix[N // 2][N // 2]
-    print("Число в центре пересечения диагоналей:", center_value)
+    if N % 2 == 1 :
+        center_value = matrix[N // 2][N // 2]
+        print("Число в центре пересечения диагоналей:", center_value)
+
+    else :
+        print("Матрица не имеет центрального элемента ")
+
+
